@@ -1,0 +1,17 @@
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "A practice mcp server"
+readme = "README.md"
+requires-python = ">=3.11.2"
+dependencies = [ "mcp>=1.6.0",]
+[[project.authors]]
+name = "Ankit Shrestha"
+email = "ankit.shrestha@amniltech.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-server = "mcp_server:main"
